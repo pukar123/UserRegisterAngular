@@ -1,0 +1,18 @@
+<div class="d-flex flex-row bd-highlight mb-9">
+    <div class="p-2 w-100 bd-highlight">
+  
+      <div class="input-group mb-12">
+        <span class="input-group-text">First Name</span>
+        <input type="text" class="form-control" [(ngModel)]="FirstName">
+        <span class="input-group-text">Last Name</span>
+        <input type="text" class="form-control" [(ngModel)]="LastName">
+        <span class="input-group-text">Email</span>
+        <input type="text" class="form-control" disabled="disabled" [(ngModel)]="Email">
+      </div>
+    </div>
+  </div>
+  
+  
+  <button (click)="updateUser()" class="btn btn-primary">
+    Update
+  </button>
